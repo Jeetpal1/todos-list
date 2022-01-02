@@ -15,7 +15,7 @@ export const TodoItem = ({ todo, onDelete }) => {
           Delete
         </button>
       </div>
-      <hr/>
+      <hr />
     </>
   );
 };

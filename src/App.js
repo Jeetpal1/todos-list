@@ -1,5 +1,9 @@
+/**
+ * @author Jeetpal Singh, singhjeetpal@gmail.com
+ * This is a todo list application. In which you can add or remove the tasks you wanna accomplish. It uses local storage to keep the tasks in storage/saved.
+ */
 // Please note: In my project, I have used different ways to do a same thing. I know every website should be consistent, this is only for the purpose of my future reference, which tells me that this can be done in this way as well
-import logo from "./logo.svg";
+
 import "./App.css";
 import Header from "./Components/Header";
 import { Todos } from "./Components/Todos";
@@ -57,19 +61,18 @@ function App() {
 
   return (
     <>
-    {/* Here Router works as a Switch statement which matches the path, only render those components. */}
+      {/* Here Router works as a Switch statement which matches the path, only render those components. */}
       <Router>
         <Header title="Jeetpal's TodosList" searchBar={false} />
         <Routes>
           <Route
-            
             path="/"
-            element = {[<AddTodo addTodo={addTodo} />,<Todos todos={todos} onDelete={onDelete} />]}
-            
+            element={[
+              <AddTodo addTodo={addTodo} />,
+              <Todos todos={todos} onDelete={onDelete} />,
+            ]}
           ></Route>
-          <Route  path="/about" element = {<About />}>
-            
-          </Route>
+          <Route path="/about" element={<About />}></Route>
         </Routes>
 
         <Footer />

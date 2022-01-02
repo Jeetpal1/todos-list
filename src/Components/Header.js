@@ -1,9 +1,7 @@
 import React from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import App from "../App";
 import { Link } from "react-router-dom";
-
-
 
 export default function Header(props) {
   return (
@@ -49,22 +47,23 @@ export default function Header(props) {
                 Search
               </button>
             </form>
-          ) : ("")}
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </nav>
   );
 }
 
-
 // If some variable is not passed from App.js then use this
 Header.defaultProps = {
-    title: "Todos List",
-    searchBar: true
-}
+  title: "Todos List",
+  searchBar: true,
+};
 
 // To ensure that title is always Link string not Link number or any other data type, it makes our code robust
 Header.propTypes = {
-    title: PropTypes.string,
-    searchBar: PropTypes.bool.isRequired
-}
+  title: PropTypes.string,
+  searchBar: PropTypes.bool.isRequired,
+};
