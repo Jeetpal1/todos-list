@@ -1,6 +1,11 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Jeetpal's Todolist is a react based project. I created this to revise my web development skills. Moreover, I use todo list in my daily routine, that is I wanted to created my own todo list app, in which I can customize things according to me. This app uses local storage to store the add tasks.
+
+How to run?
+Simply download the build folder, and you can open index.html file by using vs code or by broswer directly.
+
+This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
